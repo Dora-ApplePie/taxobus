@@ -38,7 +38,7 @@ body{
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-start;
 }
 
 .nav{
@@ -66,10 +66,26 @@ body{
   }
 }
 
-.contact-information{
+.contact-block{
+  text-align: right;
+}
+.contact-block-information{
   display: flex;
   flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
   font-weight: 400;
   color: #ffffff;
+  &__item{
+    margin-bottom: 7px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+  }
+  &__item-img{
+    margin-left: 13px;
+  }
 }

@@ -42,9 +42,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .nav {
   display: -webkit-box;
@@ -69,7 +69,10 @@ body {
     .nav-link:hover {
       border-bottom: 1px solid #ffffff; }
 
-.contact-information {
+.contact-block {
+  text-align: right; }
+
+.contact-block-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,8 +80,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
   font-weight: 400;
   color: #ffffff; }
+  .contact-block-information__item {
+    margin-bottom: 7px;
+    margin-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact-block-information__item-img {
+    margin-left: 13px; }
 
 /*# sourceMappingURL=style.css.map */
