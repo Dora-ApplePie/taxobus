@@ -12,17 +12,14 @@ body{
 
 .wrapper{
   max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0 auto;
-  
 }
 
 .main{
   box-sizing: border-box;
   padding-top: 38px;
   padding-bottom: 40px ;
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg.jpg);
   background-position:center;
   background-size:cover;
   background-repeat: no-repeat;
@@ -35,8 +32,6 @@ body{
 
 .header{
   max-width: 1140px;
-  padding-right: 15px;
-  padding-left: 15px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -45,12 +40,13 @@ body{
 
 .nav{
   display: flex;
+  align-items:flex-start;
   padding-left: 0;
   margin: 0;
   list-style-type: none;
   font-weight: 400;
   &-item{
-    margin-left: 35px;
+    margin-right: 35px;
     
   }
   &-link{
@@ -115,7 +111,7 @@ body{
     content:'';
     position: absolute;  
     width: 214px;
-    border: 1px solid $dark;
+    border-top: 1px solid $dark;
     top: 150px;
     margin-top: -10px;
   }
@@ -124,8 +120,7 @@ body{
 .main-body{
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  margin: 0 auto;
+  margin: 0 490px 0 0;
   max-width: 1140px;
   padding-top: 50px;
   padding-bottom: 120px;
@@ -135,6 +130,7 @@ body{
 .main-body-left{
   display: flex;
   flex-direction: column;
+  justify-content: start;
   &__text{
     padding-bottom: 62px;
     margin-right: 50px;
@@ -148,7 +144,7 @@ body{
 
 .main-body-right__img {
   width: 120%;
-  margin: 0px 0px 0px -35%;
+  margin: 0px 0px 0px -25%;
 }
 
 .main-body-left__subtext{
@@ -167,4 +163,63 @@ body{
     max-width: 162px;
     cursor: pointer;
   }
+}
+
+.section-service {
+  background-color: $light;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.service {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+  margin-top: 30px;
+  &-title-h2{
+  position: relative; 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 64px;
+  &::after{
+    content:'';
+    position: absolute;  
+    width: 262px;
+    border-top: 4px solid $orange;
+    top: 80px;
+    left: 0;
+    
+  }
+  }
+  &-item {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 6px rgba(188, 188, 188, 0.25);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      box-shadow: 0 14px 28px rgba(55, 55, 65, 0.548);
+    }
+  &__title-h3 {
+    margin: 52px 35px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    }
+  }
+  
 }
