@@ -160,7 +160,7 @@ body {
       -ms-flex-pack: start;
           justify-content: start; }
   .main-body-left__text {
-    padding-bottom: 62px;
+    padding-bottom: 60px;
     margin-right: 50px; }
   .main-body-left__subtext {
     display: -webkit-box;
@@ -201,6 +201,10 @@ body {
 .service {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  justify-items: stretch;
   grid-gap: 20px 20px;
   margin-top: 30px; }
   .service-title-h2 {
@@ -244,8 +248,8 @@ body {
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
-      font-variant: small-caps;
-      font-size: 30px;
+      text-transform: uppercase;
+      font-size: 23px;
       line-height: 35px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -257,5 +261,131 @@ body {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+
+.section-about {
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.section-about-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .section-about-first-left {
+    padding-left: 150px; }
+  .section-about-first__title-h2 {
+    position: relative;
+    margin-top: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 64px; }
+    .section-about-first__title-h2::after {
+      content: '';
+      position: absolute;
+      width: 149px;
+      border-top: 4px solid #FE7301;
+      top: 80px;
+      left: 0; }
+  .section-about-first__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section-about-first__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 16px 35px;
+    background: #FE7301;
+    border: none;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase; }
+  .section-about-first__img {
+    width: 100%;
+    width: 540px;
+    height: 564px;
+    margin-top: -150px; }
+
+.section-about-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 50px; }
+  .section-about-second__img {
+    margin-top: -100px; }
+  .section-about-second-advantages {
+    padding-right: 150px; }
+    .section-about-second-advantages-title-h2 {
+      position: relative;
+      margin-top: 0;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 55px;
+      line-height: 64px; }
+      .section-about-second-advantages-title-h2::after {
+        content: '';
+        position: absolute;
+        width: 149px;
+        border-top: 4px solid #FE7301;
+        top: 80px;
+        left: 0; }
+    .section-about-second-advantages-grid {
+      display: grid;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      justify-items: stretch;
+      grid-gap: 50px 80px;
+      margin-top: 30px; }
+      .section-about-second-advantages-grid__h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 35px;
+        text-transform: uppercase;
+        color: #1F3149;
+        margin-bottom: 0;
+        margin-top: 0; }
+      .section-about-second-advantages-grid__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 0;
+        margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
